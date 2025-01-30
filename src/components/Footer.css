@@ -120,12 +120,11 @@ footer {
 }
 
 .acceptors {
-  display: flex;
-  gap: 15px;
   margin-top: 4rem;
+  width: 20px;
 }
 
 .acceptors img {
-  width: 40px;
+  width: 15rem;
   height: auto;
 }

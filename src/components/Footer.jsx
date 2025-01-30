@@ -57,11 +57,8 @@ export default function Footer() {
           </div>
 
           <div className="acceptors">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Google_Pay_Logo.svg"
-              alt="Google Pay"
-            />
-            <img
+            <img src="/footer-apple-payment.png" alt="Google Pay" />
+            {/* <img
               src="https://upload.wikimedia.org/wikipedia/commons/b/b5/MasterCard_Logo.svg"
               alt="Mastercard"
             />
@@ -72,7 +69,7 @@ export default function Footer() {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
               alt="Visa"
-            />
+            /> */}
           </div>
         </div>
       </div>
