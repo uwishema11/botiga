@@ -33,6 +33,9 @@ export const NewArrivals = [
     price: `$22.00 – $55.00`,
     image: "/product-water-bottle.jpg",
     rating: 4,
+    category: "Home",
+    description: "A stylish all in one water bottle .",
+    inStock: false,
   },
   {
     id: 2,
@@ -40,6 +43,8 @@ export const NewArrivals = [
     price: `$49.00 – $69.00`,
     image: "/product-amazon.jpg",
     rating: 4,
+    category: "Electronics",
+    description: "High-quality wireless headphones with noise cancellation.",
   },
   {
     id: 3,
@@ -47,5 +52,8 @@ export const NewArrivals = [
     price: `$22.00 – $55.00`,
     image: "/product-wireless-headset.jpg",
     rating: 4,
+    category: "Electronics",
+    description: "High-quality wireless headphones with noise cancellation.",
+    inStock: true,
   },
 ];

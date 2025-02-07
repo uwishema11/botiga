@@ -9,8 +9,11 @@ import "./../styles/HomeView.css";
 export default function HomeView() {
   const navigation = useNavigate();
   const handleNavigate = (id) => {
+    navigation(`/singleVendor/${id}`);
+  };
+
+  const handleSingleProductNavigate = (id) => {
     navigation(`/singleCard/${id}`);
-    console.log(id)
   };
 
   return (
@@ -56,7 +59,7 @@ export default function HomeView() {
                     pic={product.image}
                     price={product.price}
                     rating={product.rating}
-                    onClick={() => handleNavigate(product.id)}
+                    onClick={() => handleSingleProductNavigate(product.id)}
                   />
                 ))}
               </div>
