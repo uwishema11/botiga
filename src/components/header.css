@@ -133,6 +133,7 @@ ul {
   color: white;
   display: flex;
   gap: 2rem;
+  font-weight: bold;
   padding: 4px;
   margin: 0;
 }
@@ -146,6 +147,20 @@ ul li a {
 
 ul li a:hover {
   background-color: rgba(25, 285, 2, 0.2);
+}
+.login-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+li {
+  color: white;
+  display: flex;
+  gap: 2rem;
+  padding: 4px;
+  margin: 0;
 }
 
 .contact {

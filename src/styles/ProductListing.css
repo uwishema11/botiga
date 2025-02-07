@@ -103,3 +103,23 @@ html {
 .rating .empty {
   color: #ccc;
 }
+
+.shopContainer {
+  position: relative;
+}
+
+.shopText {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.shopImage {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}

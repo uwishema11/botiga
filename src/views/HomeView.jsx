@@ -1,11 +1,18 @@
 import CategoriesCard from "../components/PopularCategories";
 import ProductCard from "../components/ProductCard";
+import { useNavigate } from "react-router-dom";
 import { VendorsList } from "../helpers/VendorsList";
 import { NewArrivals, popularCategories } from "../helpers/ProductsList";
 import VendorsCard from "../components/VendorsCard";
 import "./../styles/HomeView.css";
 
 export default function HomeView() {
+  const navigation = useNavigate();
+  const handleNavigate = (id) => {
+    navigation(`/singleCard/${id}`);
+    console.log(id)
+  };
+
   return (
     <div className="home-contentents-container">
       <div className="contents">
@@ -49,6 +56,7 @@ export default function HomeView() {
                     pic={product.image}
                     price={product.price}
                     rating={product.rating}
+                    onClick={() => handleNavigate(product.id)}
                   />
                 ))}
               </div>
@@ -62,6 +70,7 @@ export default function HomeView() {
                     pic={vendor.image}
                     name={vendor.name}
                     city={vendor.city}
+                    onClick={() => handleNavigate(vendor.id)}
                   />
                 ))}
               </div>
